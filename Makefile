@@ -1,5 +1,5 @@
 build:
-	@echo "build"
+	@ansible-playbook cm/site.yml -i localhost, -c local
 
 install:
 	@npm install
