@@ -2,14 +2,19 @@
   "name": "ps.codeschool",
   "version": "0.1.0",
   "description": "workshop",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "./node_modules/mocha/bin/mocha --recursive test",
+    "start": "node src/server.js"
   },
   "author": "Pavel Vetokhin",
   "license": "MIT",
   "dependencies": {
     "express": "latest"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
   }
 }
