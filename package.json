@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive test",
-    "start": "node src/server.js"
+    "start": "./node_modules/.bin/nodemon src/server.js"
   },
   "author": "Pavel Vetokhin",
   "license": "MIT",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
     "supertest": "^2.0.1"
   }
 }
