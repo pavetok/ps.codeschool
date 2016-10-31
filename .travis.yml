@@ -6,6 +6,10 @@ branches:
   only:
   - master
 
+before_install:
+  - npm install -g yarn
+
+install: make install
 script: make coverage
 
 after_script: make report
