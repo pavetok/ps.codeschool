@@ -6,6 +6,15 @@ branches:
   only:
   - master
 
+addons:
+  code_climate:
+    repo_token: 2e25d1cbf056545c6000221f5aeece9685462c1e5fd1474d445b06019c975d1b
+
+script: make coverage
+
+after_script:
+  - codeclimate-test-reporter < coverage/lcov.info
+
 notifications:
   email:
     on_success: change

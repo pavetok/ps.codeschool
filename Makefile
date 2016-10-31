@@ -4,8 +4,13 @@ build:
 install:
 	@npm install
 
+test:
+	@npm test
+
+coverage:
+	@npm run jest -- --coverage
+
 start:
 	@npm start
 
-test:
-	@echo "test"
+.PHONY: build install test coverage start
