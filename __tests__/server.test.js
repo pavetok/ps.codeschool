@@ -9,7 +9,7 @@ describe("hello", function() {
   it('world returned', function(done) {
     request(app)
       .get('/')
-      .expect(200)
+      .expect(404)
       .end(done);
     })
 })
