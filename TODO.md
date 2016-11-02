@@ -1,7 +1,8 @@
 + заодно давайте поставим docker используя роли из ansible-galaxy
 + в server.js засунем express.js и напишем для него тест (запрос на /) используя supertest (легко гуглится)
 + так же к server.js прикручиваем nodemon
-- дальше подрубаем travis, codeclimate
++ дальше подрубаем travis, codeclimate
+- вывести бейджики
 - после этого настраиваем aws и готовим тачку к деплою
 - сборка проекта в docker
 - публикация в docker hub
